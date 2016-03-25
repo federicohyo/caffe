@@ -21,10 +21,11 @@ Framework development discussions and thorough bug reports are collected on [Iss
 
 In case of error "fatal error: caffe/proto/caffe.pb.h: No such file or directory"
 
-In the directory you installed Caffe to
-protoc src/caffe/proto/caffe.proto --cpp_out=.
-mkdir include/caffe/proto
-mv src/caffe/proto/caffe.pb.h include/caffe/proto
+In the directory you installed Caffe digit:
+
+$ protoc src/caffe/proto/caffe.proto --cpp_out=.
+$ mkdir include/caffe/proto
+$ mv src/caffe/proto/caffe.pb.h include/caffe/proto
 
 
 Happy brewing!
