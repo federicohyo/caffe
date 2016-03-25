@@ -17,6 +17,16 @@ and step-by-step examples.
 Please join the [caffe-users group](https://groups.google.com/forum/#!forum/caffe-users) or [gitter chat](https://gitter.im/BVLC/caffe) to ask questions and talk about methods and models.
 Framework development discussions and thorough bug reports are collected on [Issues](https://github.com/BVLC/caffe/issues).
 
+# Troubleshooting
+
+In case of error "fatal error: caffe/proto/caffe.pb.h: No such file or directory"
+
+In the directory you installed Caffe to
+protoc src/caffe/proto/caffe.proto --cpp_out=.
+mkdir include/caffe/proto
+mv src/caffe/proto/caffe.pb.h include/caffe/proto
+
+
 Happy brewing!
 
 ## License and Citation
